@@ -24,8 +24,8 @@
 }
 .food--title p {
   position: relative;
-  font-family: "Acme", sans-serif;
-  font-size: var(--title);
+  font-family: "Anton", sans-serif;
+  font-size: var(--big-title);
   text-align: center;
 }
 .food--title p::before {

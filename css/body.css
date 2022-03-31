@@ -2,7 +2,7 @@ main {
   display: grid;
   position:relative;
   justify-items: center;
-  margin-top: 0.5em;
+  margin: 0.5em 0 2em 0;
   width:100%;
 }
 /* intro*/
@@ -78,4 +78,22 @@ section.intro--section--wrapper {
 .button--section{
     padding:1em 2rem;
     border-radius: 500px;
+}
+.side-line1{
+  position:fixed;
+  height:90vh;
+  width:0.2em;
+  top:50%;
+  left:10%;
+  background:black;
+  transform:translateY(-50%);
+}
+.side-line2{
+  position:fixed;
+  height:90vh;
+  width:0.2em;
+  top:50%;
+  left:90%;
+  background:black;
+  transform:translateY(-50%);
 }

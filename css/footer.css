@@ -1,0 +1,23 @@
+footer{
+    position:relative;
+    width:100%;
+    background:black;
+    height:15em;
+}
+.footer--skyline{
+    position: relative;
+    display:grid;
+    place-items:center;
+    width:100%;
+    height:100%;
+    background:url(../assets/architecture.png);
+    background-size: cover;
+    background-position: bottom;
+    color:white;
+    font-family: 'Anton', sans-serif;
+}
+.footer--skyline p{
+    text-align: center;
+    font-size: var(--big-title);
+    letter-spacing: 0.1em;
+}

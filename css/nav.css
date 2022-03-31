@@ -1,5 +1,6 @@
 nav{
     display:grid;
+    z-index: 100;
     place-items:center;
     height:5em;
     max-height: 5em;
