@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Georama&family=Playfair+Display:wght@500&display=swap');
+*,::before,::after{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    /* outline:1px solid rgb(0, 140, 255); */
+}
+:root{
+    --mbl-text-normal:1rem;
+    --mbl-text-h3:1.3rem;
+    --mbl-text-h2:1.5rem;
+    --mbl-text-h1:2rem;
+    --primary-black:rgb(0 0 0);
+}
+body{
+    min-height: 100vh;
+    display:grid;
+    place-items:center;
+}
+/*
+font-family: 'Acme', sans-serif;
+font-family: 'Anton', sans-serif;
+font-family: 'Georama', sans-serif;
+font-family: 'Playfair Display', serif;
+*/
