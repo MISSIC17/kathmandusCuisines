@@ -1,0 +1,117 @@
+.foods {
+  display: grid;
+  position: relative;
+  justify-content: center;
+  gap:1em;
+}
+.food--wrapper {
+  position: relative;
+  width: min(90vw, 50em);
+  min-height: 20em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: max(15%, 4em) auto;
+  gap: 1em;
+  padding: 1em;
+  border: 2px solid black;
+  border-radius: 0.8em;
+  transition:1s all ease-in-out;
+}
+.food--title {
+  position: relative;
+  grid-row: 1/2;
+  grid-column: 1/3;
+}
+.food--title p {
+  position: relative;
+  font-family: "Acme", sans-serif;
+  font-size: var(--title);
+  text-align: center;
+}
+.food--title p::before {
+  content: "";
+  position: absolute;
+  bottom: -0.1em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 0.1em;
+  background: black;
+}
+.food--image {
+  position: relative;
+  justify-self: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 80%;
+  width: 80%;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  border-radius: 0.8em;
+}
+.food--misc {
+  grid-row: 2/3;
+  grid-column: 2/3;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  gap: 1em;
+  margin-bottom: 2em;
+}
+.food--info--price {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.food--info--place {
+    
+
+}
+.food--info--price p,
+.food--info--place p,
+.food--info--desc p {
+  color: var(--primary-red);
+  font-size: var(--small-title);
+  font-weight: bolder;
+}
+.food--info--price span,
+.food--info--place span {
+  font-size: var(--medium-text);
+  font-weight: bolder;
+}
+.food--info--desc {
+  display: none;
+  width:100%;
+  white-space: pre-wrap;
+}
+.food--misc > button > p{
+    font-size:var(--big-title);
+    text-decoration: underline;
+}
+button.see-modes {
+    width: 70%;
+    height: 4em;
+}
+button.see-more{
+    background: var(--primary-red);
+    color: white;
+}
+button.see-less{
+    background:var(--blue);
+    color:white;
+}
+button.see-more:hover{
+    background:white;
+    color:var(--primary-red);
+    transition:0.1s all ease-in-out;
+    border:2px solid var(--primary-red);
+    cursor: pointer;
+}
+button.see-less:hover{
+    background:white;
+    color:var(--blue);
+    transition:0.1s all ease-in-out;
+    border:2px solid var(--blue);
+    cursor: pointer;
+}

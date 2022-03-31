@@ -8,41 +8,141 @@ let foods = {
 
     },
     momo: {
-        photo: '',
+        photo: 'assets/momos.jpg',
         title: 'Momo',
         price: 'NPR 150-200',
         bestPlace: 'Sandar Momo, Shree Nagar Marga',
         desc: `The first that comes in people's mind when they talk about Kathmanud's delicacies is surely Momo. While its origins are Tibetan, it has been integrated into the Nepali gastronomical journey thoroughly. They come in different shapes and sizes, but primarily you’ll find leaf-shaped or round momos being sold in street-shops and individual carts.
         Momos are meat/vegetable filled dough-balls, that are either steamed or fried, or even “kothey” - half-steamed, half-fried. A spicy, tangy tomato chutney accompanies them in most places, but depending on where you eat, these condiments may change their form and taste.`
 
+    },
+    choila: {
+        photo: 'assets/choila.jpg',
+        title: 'Choila',
+        price: 'NPR 200-400',
+        bestPlace: 'Himali Kitchen, Paryatan Marg, Kathmandu',
+        desc: `Choila is a spiced, grilled meat dish, traditionally prepared with water buffalo meat. One can also find other versions made with duck, chicken or mutton. It’s packed with heat and spice, so be sure you can take it before you gorge into it. This spicy, mouth- and the eye-watering dish is typically served with Chiura or flaked rice, that complements the soft, chewy meat well with its crunch. It is also accompanied by the traditional Newari homemade liquor- Aila. Choila has become a staple street dish in all of Nepal, brought there from traditional Newari homes and festivals. `
+    },
+
+    sekuwa: {
+        photo: 'assets/sekuwa.png',
+        title: 'Sekuwa',
+        price: 'NPR 400-600',
+        bestPlace: "Himali Kitchen, Paryatan Marg, Kathmandu",
+        desc: " Sekuwa is like a kebab, but for many, it’s even better than a kebab. It is a staple for the Limbu people of Nepal but has found its way to the streets of the Himalayan nation. Sekuwa is made out of any meat, be it pork, lamb, goat or chicken (or a mixture). The raw meat is lathered with traditional herbs and spices, and grilled over a natural wood fire. The smell of the smoking, charred meat fills up streets, attracting crowds in large numbers. However, sekuwa is not readily available everywhere in Nepal, and one may have to do thorough research about its availability before venturing out to try it. "
+    },
+    selroti: {
+        photo: "assets/selroti.webp",
+        title: "Sel Roti",
+        price: "NPR 20",
+        bestPlace: "Bakeries along Guna Kamadev Marg",
+        desc: 'A doughnut of sorts, Sel Roti, is a deep-fried delight. It is made of sweetened rice flour and is deep-fried till reddish-brown. Its bread-like consistency gives it a crunchy but fluffy texture. Sel Roti has become the sweet of the streets and is available in almost all major food hubs. It is often eaten as a quick breakfast bite so that you might find these frying up in a large kadhai early in the morning. It is usually eaten on the Hindu festivals of Tihar and Dashain. '
+    },
+    lassi: {
+        photo: "assets/lassi.jpeg",
+        title: "Lassi",
+        price: "NPR 100 - 200",
+        bestPlace: "Janakpur Dahi Lassi Bhandar, Chandraman Singh Marg, nearby Indra Chowk",
+        desc: 'Lassi is a sweet, thick drink made from yoghurt. The thick curd is mixed with water and sugar and served chilled. However, this simple lassi has many flavours now, like mango or rose, or toppings, from shaved coconut to dry fruits to a thick layer of cream. Make sure that the water used to make this sweet drink is fresh and clean, and ask for a cold glass to refresh yourself.'
+    },
+    yomari: {
+        photo: "assets/yomari.jpg",
+        title: "Yomari",
+        price: "NPR 100 - 200",
+        bestPlace: "Janakpur Dahi Lassi Bhandar, Chandraman Singh Marg, nearby Indra Chowk",
+        desc: 'This sweet treat was initially made as an offering to Gods for a good harvest, on the festival of Yomari Punhi, the largest Newari celebration. What was once a celebratory dish is now so popular all over Nepal that it can be found all year round, in most places in Kathmandu. This sweet bun is made out of rice flour, steamed and filled with a gooey paste made of sesame seeds, coconut and molasses. This traditional harvest sweet has found itself into the 21st century, with unique spins on the dish like being filled with chocolate. These cute fish-shaped buns are often served with a sweet dip.   Lassi is a sweet, thick drink made from yoghurt. The thick curd is mixed with water and sugar and served chilled. However, this simple lassi has many flavours now, like mango or rose, or toppings, from shaved coconut to dry fruits to a thick layer of cream. Make sure that the water used to make this sweet drink is fresh and clean, and ask for a cold glass to refresh yourself.'
     }
+
+
 }
-console.log(foods)
-const f = document.createElement('div');
-f.innerHTML = `
-    <div class="food--title">${foods.dalbhat.title}</div>
+// const f = document.createElement('div');
+// f.setAttribute('class', 'food--wrapper');
+// f.innerHTML = `
+//     <div class="food--title"><p>${foods.dalbhat.title}</p></div>
+
+//     <div 
+//         class="food--image"
+//         style="background-image:url(${foods.dalbhat.photo})">
+//     </div>
+//     <div class="food--misc">
+//        <div class="food--info--price"> 
+//             <p>Price:</p><span>${foods.dalbhat.price}</span>
+//         </div>
+//         <div class="food--info--place">
+//             <p>Where to eat:</p><span>${foods.dalbhat.bestPlace}</span>
+//         </div>
+//         <div class="food--info--desc">
+//             <p>Description:</p>
+//             <span>${foods.dalbhat.desc}</span>
+//         </div>
+//         <button class="see-modes see-more"><p>See more...</p></button>
+
+//     </div>
+
+
+// `
+for (let element in foods) {
+    let currElement = document.createElement('div');
+    currElement.setAttribute('class', 'food--wrapper');
+    currElement.setAttribute('id', `food--${element}`);
+    currElement.innerHTML = `
+    
+    <div class="food--title"><p>${foods[element].title}</p></div>
 
     <div 
-        class="food-image"
-        style="background-image:url(${foods.dalbhat.photo});height:10em;width:10em;">
+        class="food--image"
+        style="background-image:url(${foods[element].photo})">
     </div>
-    <div class="food--info">
+    <div class="food--misc">
        <div class="food--info--price"> 
-            <p>Price:</p><span>${foods.dalbhat.price}</span>
+            <p>Price:</p><span>${foods[element].price}</span>
         </div>
-        <div class="food-info-place">
-            <p>Best place to eat:</p><span>${foods.dalbhat.bestPlace}</span>
+        <div class="food--info--place">
+            <p>Where to eat:</p><span>${foods[element].bestPlace}</span>
         </div>
-        <div class="food-info-desc">
-            <p>Description</p>
-            <p>${foods.dalbhat.desc}</p>
+        <div class="food--info--desc">
+            <p>Description:</p>
+            <span>${foods[element].desc}</span>
         </div>
-        <button class="see-more">See more...</button>
-        <button class="see-less">See less...</button>
+        <button class="see-modes see-more"><p>See more...</p></button>
 
     </div>
+    `;
+    console.log(element)
+    document.querySelector('.foods').appendChild(currElement);
+    // console.log(document.querySelector(`#food--${element} > food--misc > button`));
+    let misc = currElement.lastElementChild;
+    let buttonMode = misc.querySelector(':scope > .see-modes');
+    buttonMode.addEventListener('click', () => {
+        if (buttonMode.classList.contains('see-more')) {
+            currElement.querySelector('.food--info--desc').style.display = "grid";
+            
+            buttonMode.classList.remove('see-more');
+            buttonMode.classList.add('see-less');
+            buttonMode.firstChild.innerHTML = "See less...";
+        } else if (buttonMode.classList.contains('see-less')) {
+            currElement.querySelector('.food--info--desc').style.display = "none";
+            buttonMode.classList.add('see-more');
+            buttonMode.classList.remove('see-less');
+            buttonMode.firstChild.innerHTML = "See more...";
+        }
 
+    })
+}
+// document.querySelector('.foods').appendChild(f);
 
-`
-// document.body.appendChild(f);
-console.log(foods["dalbhat"].price)
+// let buttonMode = document.querySelector('.see-modes');
+// buttonMode.addEventListener('click', () => {
+//     if (buttonMode.classList.contains('see-more')) {
+//         document.querySelector('.food--info--desc').style.display = "grid";
+//         buttonMode.classList.remove('see-more');
+//         buttonMode.classList.add('see-less');
+//         buttonMode.firstChild.innerHTML = "See less...";
+//     } else if (buttonMode.classList.contains('see-less')) {
+//         document.querySelector('.food--info--desc').style.display = "none";
+//         buttonMode.classList.add('see-more');
+//         buttonMode.classList.remove('see-less');
+//         buttonMode.firstChild.innerHTML = "See more...";
+//     }
+
+// })
