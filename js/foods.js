@@ -55,32 +55,6 @@ let foods = {
 
 
 }
-// const f = document.createElement('div');
-// f.setAttribute('class', 'food--wrapper');
-// f.innerHTML = `
-//     <div class="food--title"><p>${foods.dalbhat.title}</p></div>
-
-//     <div 
-//         class="food--image"
-//         style="background-image:url(${foods.dalbhat.photo})">
-//     </div>
-//     <div class="food--misc">
-//        <div class="food--info--price"> 
-//             <p>Price:</p><span>${foods.dalbhat.price}</span>
-//         </div>
-//         <div class="food--info--place">
-//             <p>Where to eat:</p><span>${foods.dalbhat.bestPlace}</span>
-//         </div>
-//         <div class="food--info--desc">
-//             <p>Description:</p>
-//             <span>${foods.dalbhat.desc}</span>
-//         </div>
-//         <button class="see-modes see-more"><p>See more...</p></button>
-
-//     </div>
-
-
-// `
 for (let element in foods) {
     let currElement = document.createElement('div');
     currElement.setAttribute('class', 'food--wrapper');
@@ -116,7 +90,6 @@ for (let element in foods) {
     buttonMode.addEventListener('click', () => {
         if (buttonMode.classList.contains('see-more')) {
             currElement.querySelector('.food--info--desc').style.display = "grid";
-            
             buttonMode.classList.remove('see-more');
             buttonMode.classList.add('see-less');
             buttonMode.firstChild.innerHTML = "See less...";
@@ -129,20 +102,3 @@ for (let element in foods) {
 
     })
 }
-// document.querySelector('.foods').appendChild(f);
-
-// let buttonMode = document.querySelector('.see-modes');
-// buttonMode.addEventListener('click', () => {
-//     if (buttonMode.classList.contains('see-more')) {
-//         document.querySelector('.food--info--desc').style.display = "grid";
-//         buttonMode.classList.remove('see-more');
-//         buttonMode.classList.add('see-less');
-//         buttonMode.firstChild.innerHTML = "See less...";
-//     } else if (buttonMode.classList.contains('see-less')) {
-//         document.querySelector('.food--info--desc').style.display = "none";
-//         buttonMode.classList.add('see-more');
-//         buttonMode.classList.remove('see-less');
-//         buttonMode.firstChild.innerHTML = "See more...";
-//     }
-
-// })
