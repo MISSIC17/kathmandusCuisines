@@ -1,9 +1,13 @@
 nav{
     display:grid;
+    top:0;
+    left:0;
+    width:100%;
     z-index: 100;
     place-items:center;
     height:5em;
     max-height: 5em;
+    margin-bottom: 1em;
 }
 .nav--title{
     position:relative;
@@ -24,6 +28,11 @@ nav{
     background:var(--primary-black);
     height:0.075em;
     width:120%;
-
-
+    
+    
+}
+.sticky{
+    position:fixed;
+    transition:0.1s all ease-out;
+    background:linear-gradient(white 90%,rgb(179, 179, 179))
 }

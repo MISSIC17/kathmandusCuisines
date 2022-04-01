@@ -78,7 +78,6 @@
 .food--info--price span,
 .food--info--place span {
   font-size: var(--medium-text);
-  font-weight: bolder;
 }
 .food--info--desc {
   display: none;
