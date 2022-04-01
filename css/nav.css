@@ -13,7 +13,8 @@ nav{
     position:relative;
     display:grid;
     place-items:center;
-    width:min(80%,25em);
+    width:80%;
+    max-width: 25em;
     height:100%;
 }
 .nav--title img{
@@ -28,8 +29,6 @@ nav{
     background:var(--primary-black);
     height:0.075em;
     width:120%;
-    
-    
 }
 .sticky{
     position:fixed;
