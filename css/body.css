@@ -14,14 +14,13 @@ section.intro--section--wrapper {
   background: url(../assets/momo1.jpg);
   background-size: cover;
   background-position: center;
-  /* height: 45rem; */
-  /* max-height: 65vh; */
   width:100%;
   max-width: 62.5em;;
   width: min(100%, 62.5rem);
   color: white;
   font-family: "Anton", sans-serif;
   padding:1em 0;
+  margin-bottom:1.5em;
 }
 .intro--section--darken {
   position: absolute;
@@ -70,12 +69,13 @@ section.intro--section--wrapper {
 }
 /*buttons*/
 .button--section--wrapper{
-    margin:1.5em 0;
+    margin-bottom:2em 0;
     position:relative;
     display:flex;
     width:70%;
     flex-direction: row;
     justify-content: space-evenly;
+    
 }
 .button--section{
     padding:1em 2rem;
