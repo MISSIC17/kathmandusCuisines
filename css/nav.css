@@ -1,5 +1,6 @@
 nav{
     display:grid;
+    position: relative;
     top:0;
     left:0;
     width:100%;
@@ -8,6 +9,7 @@ nav{
     height:5em;
     max-height: 5em;
     margin-bottom: 1em;
+    overflow: hidden;
 }
 .nav--title{
     position:relative;
