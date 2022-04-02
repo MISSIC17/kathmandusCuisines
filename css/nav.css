@@ -35,8 +35,9 @@ nav{
 .sticky{
     position:fixed;
     transition:0.1s all ease-out;
-    background:linear-gradient(white 90%,rgb(179, 179, 179));
     animation:stick 0.1s linear;
+    background:white;
+    box-shadow: 0 0 30px 10px gray;
 }
 
 @keyframes stick {

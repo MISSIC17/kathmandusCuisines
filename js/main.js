@@ -1,6 +1,6 @@
 window.addEventListener("scroll", () => {
     let nav = document.querySelector('nav');
-    nav.classList.toggle('sticky', window.scrollY > 35);
+    nav.classList.toggle('sticky', window.scrollY > 200);
 })
 let buttonsWrapper = document.querySelector('.buttons--wrapper');
 buttonsWrapper.addEventListener('scroll', (e) => {
