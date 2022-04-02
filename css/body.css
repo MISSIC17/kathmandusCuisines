@@ -73,6 +73,7 @@ section.intro--section--wrapper {
   display: grid;
   place-items: center;
   height: 100%;
+  scrollbar-width: none;
 }
 .buttons--wrapper {
   position: relative;
@@ -83,6 +84,7 @@ section.intro--section--wrapper {
   flex-direction: row;
   overflow-x: scroll;
   border-radius: 500px;
+  scrollbar-width: none;
 }
 .buttons--wrapper::-webkit-scrollbar {
   display: none;
