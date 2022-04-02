@@ -1,4 +1,17 @@
-@media only screen and (max-width: 600px) {
+
+@media only screen and (min-width: 500px) {
+  main {
+    width: 100%;
+  }
+  .food-wrapper {
+    width: 90vw;
+  }
+  .button--section--hover{
+    display:none;
+    justify-content: space-around;
+  }
+}
+@media only screen and (min-width: 720px) {
   main {
     width: 100%;
   }
@@ -9,9 +22,20 @@
   .food-wrapper {
     width: 90vw;
   }
+  .button--section--hover{
+    display:none;
+    justify-content: space-around;
+  }
+  .food--misc{
+    padding-left:1em;
+  }
 }
 
-@media only screen and (min-width: 1034px) {
+@media only screen and (min-width: 1024px) {
+  .side-line1,
+  .side-line2{
+    display:grid;
+  }
   .food--wrapper {
     grid-template-columns: 1fr 1fr;
   }

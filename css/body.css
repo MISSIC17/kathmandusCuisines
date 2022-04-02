@@ -2,7 +2,6 @@ main {
   display: grid;
   position: relative;
   justify-items: center;
-  margin: 2em 0;
   width: 95%;
 }
 section.intro--section--wrapper {
@@ -45,6 +44,7 @@ section.intro--section--wrapper {
 }
 .intro--h2 {
   font-size: clamp(3em, calc(3em + 1vw), 3.5em);
+  white-space: nowrap;
 }
 .intro--h3 {
   font-size: clamp(2.5em, calc(2.5em + 1vw), 3em);
@@ -83,8 +83,6 @@ section.intro--section--wrapper {
   flex-direction: row;
   overflow-x: scroll;
   border-radius: 500px;
-  align-items: center;
-  
 }
 .buttons--wrapper::-webkit-scrollbar {
   display: none;
@@ -132,7 +130,7 @@ section.intro--section--wrapper {
   max-height: 3.5em;
   background: black;
   transition: 0.2s all ease-in-out;
-  margin:1em 0;
+  margin: 1em 0;
 }
 .button--section:hover {
   background: white;
@@ -151,7 +149,7 @@ section.intro--section--wrapper {
   background: var(--primary-red);
 }
 .side-line1 {
-  display: grid;
+  display: none;
   position: fixed;
   height: 90vh;
   width: 0.2em;
@@ -161,7 +159,7 @@ section.intro--section--wrapper {
   transform: translateY(-50%);
 }
 .side-line2 {
-  display: grid;
+  display: none;
   position: fixed;
   height: 90vh;
   width: 0.2em;
@@ -169,4 +167,8 @@ section.intro--section--wrapper {
   left: 90%;
   background: black;
   transform: translateY(-50%);
+}
+.button--sticky {
+  position: fixed;
+  top:0;
 }

@@ -10,8 +10,8 @@
   width: min(90vw, 50em);
   min-height: 20em;
   display: grid;
-  gap: 2.5em;
-  padding: 1em;
+  
+  padding:0.2em 0.8em;
   border: 2px solid #ccc;
   box-shadow:0 2px 10px 2px #cdcd;
   border-radius: 0.8em;
@@ -55,10 +55,10 @@
   grid-row: 3/4;
   grid-column: 1/2;
   display: flex;
+  margin:1em 0;
   justify-items: center;
   flex-direction: column;
   gap: 1em;
-  margin-bottom: 2em;
 }
 .food--info--price {
   display: flex;
@@ -74,7 +74,7 @@
 .food--info--desc p {
   color: var(--primary-red);
   font-size: var(--small-title);
-  font-weight: bolder;
+  font-weight: bold;
 }
 .food--info--price span,
 .food--info--place span {
@@ -84,13 +84,14 @@
   display: none;
   width:100%;
   white-space: pre-wrap;
+  text-align: justify;
 }
 .food--misc > button > p{
     font-size:var(--big-title);
     text-decoration: underline;
 }
 button.see-modes {
-    width: 70%;
+    width: 60%;
     height: 4em;
     align-self:center;
 }

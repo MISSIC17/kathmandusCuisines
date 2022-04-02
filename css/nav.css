@@ -35,5 +35,18 @@ nav{
 .sticky{
     position:fixed;
     transition:0.1s all ease-out;
-    background:linear-gradient(white 90%,rgb(179, 179, 179))
+    background:linear-gradient(white 90%,rgb(179, 179, 179));
+    animation:stick 0.1s linear;
+}
+
+@keyframes stick {
+    0%{
+        transform:translateY(5%);
+    }
+    50%{
+        transform:translateY(-15%);
+    }
+    100%{
+        transform:translateY(0%);
+    }
 }
