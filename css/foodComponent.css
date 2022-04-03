@@ -10,7 +10,6 @@
   width: min(90vw, 50em);
   min-height: 20em;
   display: grid;
-  
   padding:0.2em 0.8em;
   border: 2px solid #ccc;
   box-shadow:0 2px 10px 2px #cdcd;
@@ -58,7 +57,7 @@
   margin:1em 0;
   justify-items: center;
   flex-direction: column;
-  gap: 1em;
+  gap: 0.5em;
 }
 .food--info--price {
   display: flex;
@@ -87,7 +86,7 @@
   text-align: justify;
 }
 .food--misc > button > p{
-    font-size:var(--big-title);
+    font-size:var(--medium-text);
     text-decoration: underline;
 }
 button.see-modes {

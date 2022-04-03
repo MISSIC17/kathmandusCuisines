@@ -43,16 +43,16 @@ section.intro--section--wrapper {
   text-fill-color: transparent;
 }
 .intro--h2 {
-  font-size: clamp(3em, calc(3em + 1vw), 3.5em);
+  font-size: clamp(2em, calc(2em + 1vw), 2.5em);
   white-space: nowrap;
 }
 .intro--h3 {
-  font-size: clamp(2.5em, calc(2.5em + 1vw), 3em);
+  font-size: clamp(1.5em, calc(1.5em + 1vw), 2em);
 }
 .intro--h1 {
   position: relative;
   width: fit-content;
-  font-size: clamp(3.5em, calc(3.5em + 1vw), 4em);
+  font-size: clamp(2.5em, calc(2.5em + 1vw), 3em);
   color: red;
   letter-spacing: 0.08em;
   -webkit-text-stroke: 2px white;
