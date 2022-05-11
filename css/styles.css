@@ -12,7 +12,7 @@
     --mbl-text-h1:2rem;
     --title:clamp(2em,calc(2em + 1vw),2.5em);
     --small-title:clamp(1em, calc(1em + 1vw),1.2em);
-    --medium-text:clamp(1em,calc(1.1em + 1vw),1.2em);
+    --medium-text:clamp(1em,calc(1em + 1vw),1.05em);
     --big-title:clamp(1.5em,calc(1.5em + 1vw),1.8em);
     --primary-black:rgb(0 0 0);
     --primary-red:rgb(211, 30, 30);
@@ -22,9 +22,18 @@ body{
     display:grid;
     place-items: center;
     width:100%;
+    min-height: 100vh;
+    
 }
 button{
     border:none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    z-index: 10;
+}
+button>p{
+    z-index: -1;
 }
 /*
 font-family: 'Acme', sans-serif;

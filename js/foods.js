@@ -76,7 +76,6 @@ let currButton = document.querySelector('#button-all').id;
 renderer("all");
 document.querySelector('#button-mains').addEventListener('click', () => {
     foodParent.innerHTML = '';
-    console.log("Bruh")
     renderer("mains");
 });
 let buttons = document.querySelectorAll('.button--section');
@@ -92,7 +91,6 @@ function renderer(category) {
     for (let element in foods) {
         if (category == "all") neededCategory = foods[element].category;
 
-        console.log(category)
         if (foods[element].category == neededCategory) {
             let currElement = document.createElement('div');
             currElement.setAttribute('class', 'food--wrapper');

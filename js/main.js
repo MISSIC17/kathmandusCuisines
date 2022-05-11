@@ -10,3 +10,18 @@ buttonsWrapper.addEventListener('scroll', (e) => {
         document.querySelector('.button--section--hover').classList.replace('button--left', 'button--right');
     }
 })
+let btnActive = document.querySelector('#button-all');
+let menuBtns = document.querySelectorAll('.buttons--wrapper>button')
+menuBtns.forEach((btn)  => {
+    btn.addEventListener('click', (e) => {
+        if (e.target == btn) {
+            btnActive.classList.remove('btn--focus');
+            btnActive = btn;
+            btnActive.classList.add('btn--focus');
+        } else if (e.target.tagName == ("P") && e.target.parentNode==btn) {
+            btnActive.classList.remove('btn--focus');
+            btnActive = e.target.parentNode;
+            btnActive.classList.add('btn--focus');
+        }
+    })
+})
